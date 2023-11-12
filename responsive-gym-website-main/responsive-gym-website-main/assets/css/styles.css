@@ -411,6 +411,7 @@ a {
   transform: translateX(.25rem);
 }
 
+
 /*=============== LOGOS ===============*/
 .logos__container{
 grid-template-columns: repeat(2, 1fr);
@@ -682,15 +683,15 @@ justify-items: center;
   padding-bottom: 0;
 }
 .calculate__container{
-  row-gap: 3rem;
-  
+  row-gap: 3rem !important;
+  margin-bottom: 5rem;
 }
 .calculate__content .section__titles{
   margin-bottom: 2rem;
   text-align: center;
 }
 .calculate__description{
-  text-align: center;
+  text-align:   center !important;
   margin-bottom: 2.5rem;
 }
 .calculate__form{
@@ -941,7 +942,7 @@ html::-webkit-scrollbar-thumb:hover{
   gap: 2.5rem;
 }
 .calculate__container{
-  grid-template-columns: 1fr 0.8fr;
+  grid-template-columns: repeat(3, 1fr);;
   align-items: center;
 }
 .calculate__form{
