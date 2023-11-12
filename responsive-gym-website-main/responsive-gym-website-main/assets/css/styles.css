@@ -356,7 +356,7 @@ a {
 .button{
   display: inline-block;
   background-color: var(--first-color);
-  padding: 18px 32px;
+  padding: 20px 30px !important;
   border: 2px solid var(--first-color-light);
   color: var(--title-color-black);
   font-weight: var(--font-bold);
@@ -460,7 +460,10 @@ justify-items: center;
 .program__card:hover .program__button{
   opacity: 1;
 }
-
+.about-btn{
+  padding: 15px 26px !important;
+    width: max-content !important;
+}
 
 
 /*=============== CHOOSE ===============*/
@@ -543,7 +546,8 @@ justify-items: center;
 .pricing__img{
   width: 35px;
   margin: 0 auto;
-  border: 2px solid red;
+  margin-bottom: 0.7rem !important;
+ 
 }
 .pricing__shape{
   width: 60px;
@@ -551,24 +555,29 @@ justify-items: center;
   background-color: var(--first-color-gray);
   border-radius: 50%;
   place-items: center;
-  margin-bottom: 1rem;
+  margin: 0 auto;
 }
 .pricing__title{
   font-size: var(--h3-font-size);
   color: var(--text-color);
   margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: center;
 }
-.pricing__number{
+.pricing_number{
   font-size: var(--h1-font-size);
+  text-align: center !important;
+
 }
 .pricing__list{
-  row-gap: 1rem;
+  row-gap: 0.6rem;
 }
 .pricing__item{
   display: flex;
-  column-gap: 0.5rem;
+  column-gap: 0.4rem;
   align-items: center;
   font-size: var(--small-font-size);
+ 
 }
 .pricing__item i{
   font-size: 1.25rem;
@@ -579,7 +588,11 @@ justify-items: center;
 }
 .pricing__button{
   background-color: var(--title-color);
+  padding: 15px 26px !important;
+  width: max-content !important;
+  margin: 0 auto;
 }
+
 .pricing__button:hover{
   background-color: var(--title-color);
 }
@@ -631,6 +644,25 @@ color: var(--title-color);
   position: relative;
   border: 2px solid var(--first-color-light);
 }
+.enum{
+  /* padding-left:2px !important ; */
+  list-style-type: circle !important;
+ 
+}
+.display{
+ color: hsla(79, 6%, 64%, 0) !important;
+}
+.display-mijloc{
+  color: var(--first-color) !important;
+}
+.add-mijloc{
+  color: var(--first-color) !important;
+  
+}
+.add{
+  color:hsla(79, 6%, 64%, 0) !important; ;
+}
+ 
 .calculate__input{
   width: 100%;
   background-color: transparent;
