@@ -543,6 +543,7 @@ justify-items: center;
 .pricing__img{
   width: 35px;
   margin: 0 auto;
+  border: 2px solid red;
 }
 .pricing__shape{
   width: 60px;
