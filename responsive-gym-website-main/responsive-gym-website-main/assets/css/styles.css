@@ -234,6 +234,8 @@ a {
 .nav .nav__button{
   background-color: var(--title-color);
   border: none;
+  margin-top:12px;
+  
 }
 /* Show menu */
 .show-menu{
@@ -253,6 +255,30 @@ a {
 }
 
 /*=============== HOME ===============*/
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(72, 72, 72, 0.366), rgba(53, 53, 53, 0.5)), url("../img/poza1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.7;
+  /* Place the overlay behind the content */
+ 
+  /* Adjust the opacity as needed */
+}
+
+/* Add this style to adjust the positioning of the content */
+.home__container {
+  position: relative;
+  z-index: 1;
+  /* Ensure the content is above the overlay */
+}
+
 .home{
   position:relative;
   padding-bottom: 0;
@@ -264,19 +290,6 @@ a {
   /* opacity: 1; */
   /* row-gap: 3rem; */
  
-}
-.bg{
-  /* background-image: url("../img/poza1.jpg"); */
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../img/poza1.jpg");
-  background-repeat: no-repeat;
-  /* background-position: -50px -60px; */
-  width: 100% !important;
-  height: 100% !important;
-  background-size: 100%;
-  z-index: -10000;
-  margin-left: 0 !important;
-  padding-left: 0 !important;
-  /* opacity: 0.5 !important; */
 }
 
 
@@ -304,7 +317,9 @@ a {
 .home__description{
   margin-bottom: 2.5rem;
   font-size: var(--h3-font-size);
-  color: #FA70A3;
+  color: var(--first-color-light);
+  letter-spacing: 0.7px;
+  font-weight: 500;
 
 }
 .home__triangle{
@@ -539,85 +554,127 @@ justify-items: center;
   margin: 0 auto;
 }
 /*=============== PRICING ===============*/
-.pricing__container{
+.pricing__container {
   grid-template-columns: 285px;
   justify-content: center;
   row-gap: 2rem;
 }
-.pricing__card, 
+.display {
+  color: hsla(79, 6%, 64%, 0) !important;
+}
+
+.display-mijloc {
+  color: var(--first-color) !important;
+}
+
+.add-mijloc {
+  color: var(--first-color) !important;
+
+}
+
+.add {
+  color: hsla(79, 6%, 64%, 0) !important;
+  ;
+}
+
+.pricing__card,
 .pricing__shape,
-.pricing__list{
+.pricing__list {
   display: grid;
 }
 
-.pricing__card{
+.pricing__card {
   row-gap: 2rem;
-  background-color: hsla(79,6%,64%,.07);
+  background-color: hsla(79, 6%, 64%, .07);
   padding: 2rem 2.5rem;
 }
-.pricing__img{
+
+.pricing__img {
   width: 35px;
   margin: 0 auto;
+  margin-bottom: 0.7rem !important;
+
 }
-.pricing__shape{
+
+.pricing__shape {
   width: 60px;
   height: 60px;
   background-color: var(--first-color-gray);
   border-radius: 50%;
   place-items: center;
-  margin-bottom: 1rem;
+  margin: 0 auto;
 }
-.pricing__title{
+
+.pricing__title {
   font-size: var(--h3-font-size);
   color: var(--text-color);
   margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: center;
 }
-.pricing__number{
+
+.pricing_number {
   font-size: var(--h1-font-size);
+  text-align: center !important;
+
 }
-.pricing__list{
-  row-gap: 1rem;
+
+.pricing__list {
+  row-gap: 0.6rem;
 }
-.pricing__item{
+
+.pricing__item {
   display: flex;
-  column-gap: 0.5rem;
+  column-gap: 0.4rem;
   align-items: center;
   font-size: var(--small-font-size);
+
 }
-.pricing__item i{
+
+.pricing__item i {
   font-size: 1.25rem;
   color: var(--first-color);
 }
-.pricing__item-no i{
-  color: red;
-}
-.pricing__button{
-  background-color: var(--title-color);
-}
-.pricing__button:hover{
-  background-color: var(--title-color);
-}
-.pricing__card-active{
-  background-color: var(--first-color);
-  border: 2px solid var(--first-color-dark);
-}
-.pricing__card-active .pricing__shape{
-  background-color: var(--first-color-light);
-}
-.pricing__card-active 
-.pricing__item i{
-color: var(--title-color);
-}
-.pricing__card-active .pricing__title,
-.pricing__card-active .pricing__number,
-.pricing__card-active .pricing__item{
-  color: var(--title-color-black);
-}
-.pricing__card-active .pricing__item-no i{
+
+.pricing__item-no i {
   color: red;
 }
 
-.no{
+.pricing__button {
+  background-color: var(--title-color);
+  padding: 15px 26px !important;
+  width: max-content !important;
+  margin: 0 auto;
+}
+
+.pricing__button:hover {
+  background-color: var(--title-color);
+}
+
+.pricing__card-active {
+  background-color: var(--first-color);
+  border: 2px solid var(--first-color-dark);
+}
+
+.pricing__card-active .pricing__shape {
+  background-color: var(--first-color-light);
+}
+
+.pricing__card-active .pricing__item i {
+  color: var(--title-color);
+}
+
+.pricing__card-active .pricing__title,
+.pricing__card-active .pricing__number,
+.pricing__card-active .pricing__item {
+  color: var(--title-color-black);
+}
+
+.pricing__card-active .pricing__item-no i {
+  color: red;
+}
+
+.no {
   color: var(--title-color-black);
 }
 
