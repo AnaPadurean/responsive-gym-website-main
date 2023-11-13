@@ -320,6 +320,7 @@ a {
   color: var(--first-color-light);
   letter-spacing: 0.7px;
   font-weight: 500;
+  
 
 }
 .home__triangle{
@@ -693,6 +694,8 @@ justify-items: center;
 .calculate__description{
   text-align:   center !important;
   margin-bottom: 2.5rem;
+  margin: 0 auto !important ;
+  
 }
 .calculate__form{
   display: grid;
