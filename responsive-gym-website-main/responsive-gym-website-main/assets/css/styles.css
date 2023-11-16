@@ -122,9 +122,13 @@ th {
     border-bottom: 1px solid #eee;
     position: relative;
     padding-left: 50%;
-    background-color: #992157
+    
   }
+td:nth-of-type(1){
+  background-color: #992157;
+  text-align: center !important;
 
+}
   td:before {
     /* Now like a table header */
     position: absolute;
@@ -132,7 +136,7 @@ th {
     top: 6px;
     left: 6px;
     width: 45%;
-    padding-right: 10px;
+    margin-top: 1rem;
     white-space: nowrap;
   }
 
