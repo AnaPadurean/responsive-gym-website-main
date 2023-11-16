@@ -41,7 +41,11 @@
   --z-tooltip: 10;
   --z-fixed: 100;
 }
-
+.style-icon{
+  color:#bd487b;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
 /* Responsive typography */
 @media screen and (min-width: 1024px) {
   :root {
@@ -54,6 +58,122 @@
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
+  }
+}
+
+
+
+/*=============== table ===============*/
+/* Table Styles */
+ 
+table {
+  width: 50vw;
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: center !important;
+}
+
+/* Zebra striping */
+
+
+th {
+  background: var(--first-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center !important;
+}
+
+td,
+th {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align:center;
+}
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /*
+	Label the data
+	*/
+  td:nth-of-type(1):before {
+    content: "First Name";
+  }
+
+  td:nth-of-type(2):before {
+    content: "Last Name";
+  }
+
+  td:nth-of-type(3):before {
+    content: "Job Title";
+  }
+
+  td:nth-of-type(4):before {
+    content: "Favorite Color";
+  }
+
+  td:nth-of-type(5):before {
+    content: "Wars of Trek?";
+  }
+
+  td:nth-of-type(6):before {
+    content: "Secret Alias";
+  }
+
+  td:nth-of-type(7):before {
+    content: "Date of Birth";
+  }
+
+  td:nth-of-type(8):before {
+    content: "Dream Vacation City";
+  }
+
+  td:nth-of-type(9):before {
+    content: "GPA";
+  }
+
+  td:nth-of-type(10):before {
+    content: "Arbitrary Data";
   }
 }
 
@@ -430,9 +550,7 @@ a {
   color: var(--first-color-alt);
 }
 
-.pricing:hover .flipper {
-  margin-top: 5em !important;
-}
+
 
 /*=============== BUTTON ===============*/
 .button{
@@ -548,32 +666,7 @@ justify-items: center;
   opacity: 1;
 }
 
-.flip-container {
-  perspective: 1000px;
-}
 
-.flipper {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-}
-
-.pricing__card:hover .flipper {
-  transform: rotateY(180deg);
-}
-
-.front,
-.back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.back {
-  transform: rotateY(180deg);
-}
 
 
 
@@ -642,6 +735,7 @@ justify-items: center;
   grid-template-columns: 270px;
   justify-content: center;
   row-gap: 3rem !important;
+  margin-bottom: 2rem !important;
 }
 .display {
   color: hsla(79, 6%, 64%, 0) !important;
@@ -1277,7 +1371,14 @@ justify-content: initial ;
     
   }
 }
-
+.locatie-inot{
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.add-margin{
+  margin-bottom: 2rem !important;
+  margin-bottom: 2rem !important;
+}
 @media screen  and (min-width:1332px) {
   .about-img::before {
       content: "";
@@ -1291,6 +1392,11 @@ justify-content: initial ;
       z-index: -1;
       border-radius: 1rem;
   
+    }
+    .frame-harta::before{
+      top:-1.7rem !important;
+        left: 2.5rem !important;
+        z-index: -1 !important;
     }
 }
   
@@ -1308,7 +1414,8 @@ justify-content: initial ;
   margin-bottom: 2rem;
 }
 .margin{
-  margin-top:3rem !important
+  margin-top:3rem !important;
+  margin-bottom:3rem !important;
 }
 .antrenori{
   width: 50%;
