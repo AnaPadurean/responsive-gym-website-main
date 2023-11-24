@@ -61,11 +61,11 @@
   }
 }
 
-
-
 /*=============== table ===============*/
 /* Table Styles */
- 
+    .add-margin-bottom{
+        padding-bottom: 1rem !important;
+    }
 table {
   width: 50vw;
   border-collapse: collapse;
@@ -167,7 +167,26 @@ td:nth-of-type(1){
   }
 
 }
+.paragraf_ab {
+  list-style: none;
+  /* Remove default bullets */
+}
 
+.paragraf_ab li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #bd487b;
+  font-size: larger;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
 /*=============== BASE ===============*/
 * {
   box-sizing: border-box;
@@ -587,6 +606,7 @@ a {
   width: 90vw;
   margin: 0 auto !important;
   border-radius: 2rem !important;
+  height: 90vh;
 }
 
 
@@ -915,7 +935,7 @@ justify-items: center;
   color: var(--title-color-black);
 }
 #not-show, i{
-color: var(--title-color-black);
+
   }
 
 /*=============== CALCULATE ===============*/
