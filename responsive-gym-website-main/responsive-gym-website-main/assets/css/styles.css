@@ -405,11 +405,11 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(56, 56, 56, 0.366), rgba(25, 25, 25, 0.5)), url("../img/poza1.jpg");
+  background: linear-gradient(rgba(96, 96, 96, 0.366), rgba(43, 43, 43, 0.5)), url("../img/poza1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.6;
   /* Place the overlay behind the content */
  
   /* Adjust the opacity as needed */
@@ -831,7 +831,12 @@ justify-items: center;
   color: hsla(79, 6%, 64%, 0) !important;
   
 }
+/* .incercare{
 
+  background:  url("../img/imagine wave new.jpg");
+  background-repeat: no-repeat;
+
+} */
 .pricing__card,
 .pricing__shape,
 .pricing__list {
@@ -1004,12 +1009,14 @@ justify-items: center;
   position: absolute;
   transform: translateY(1rem);
 }
-
+.margin-top{
+  margin-top: 6rem !important;
+}
 .formular{
  
  width: max-content;
  margin: 0 auto;
- padding-top: 5rem;
+ padding-top: 2rem;
 }
 /*=============== FOOTER ===============*/
 .footer__container{
@@ -1084,8 +1091,8 @@ justify-items: center;
   display: inline-flex;
   padding: .25rem;
   background-color: var(--first-color);
-  border-radius: 50%;
-  font-size: 1.25rem;
+  border-radius: 30%;
+  font-size: 1.7rem;
   color: var(--title-color-black);
   transition: background-color .4s;
 }
@@ -1093,7 +1100,7 @@ justify-items: center;
   background-color: var(--first-color-dark);
 }
 .footer__copy{
-  font-size: var(--smaller-font-size);
+  font-size: var(--h3-font-size);
   color: var(--text-color-light);
 }
 .footer__message{
