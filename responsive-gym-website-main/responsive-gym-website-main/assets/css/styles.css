@@ -59,6 +59,7 @@
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
   }
+
 }
 
 /*=============== table ===============*/
@@ -66,6 +67,7 @@
     .add-margin-bottom{
         padding-bottom: 1rem !important;
     }
+
 table {
   width: 50vw;
   border-collapse: collapse;
@@ -77,8 +79,7 @@ table {
   padding-top: 3rem !important;
   width: 50vw;
   margin: 0 auto;
- 
-  
+
 }
 
 .titlu_ab{
@@ -87,9 +88,16 @@ padding-top: 3rem !important;
   margin: 0 auto;
 }
 
-
 /* Zebra striping */
-
+@media only screen and (max-width: 760px){
+  .paragraf_ab {
+      padding-top: 3rem !important;
+      width: 70vw;
+      margin: 0 auto;
+  
+  
+    }
+}
 
 th {
   background: var(--first-color);
@@ -98,7 +106,11 @@ th {
   font-size: 1.5rem;
   text-align: center !important;
 }
-
+@media only screen and (max-width: 760px){
+  table{
+    width: 90vw;
+  }
+}
 td,
 th {
   padding: 1rem;
@@ -1018,6 +1030,128 @@ justify-items: center;
  margin: 0 auto;
  padding-top: 2rem;
 }
+/*=============== carduri testimoniale  ===============*/
+
+
+.testimoniale-container{
+display: flex;
+/* align-items: center; */
+flex-flow: wrap;
+justify-content: center;
+}
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
+figure.snip1157 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: none !important;
+}
+
+figure.snip1157 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+
+figure.snip1157 img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin: 40px 0 0 10px;
+}
+
+figure.snip1157 blockquote {
+  display: block;
+  border-radius: 8px;
+  position: relative;
+  background-color: #fafafa;
+  padding: 25px 50px 30px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+}
+
+figure.snip1157 blockquote:before,
+figure.snip1157 blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+
+figure.snip1157 blockquote:before {
+  top: 25px;
+  left: 20px;
+}
+
+figure.snip1157 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
+}
+
+figure.snip1157 .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fafafa;
+  margin: 0;
+  position: absolute;
+}
+
+figure.snip1157 .author {
+  position: absolute;
+  bottom: 45px;
+  padding: 0 10px 0 120px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+figure.snip1157 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 700;
+}
+
+figure.snip1157 .author h5 span {
+  font-weight: 300;
+  
+  
+}
+figure.snip1157{
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+
+/* Demo purposes only */
+body {
+  background-color: #212121
+}
+
+
+
 /*=============== FOOTER ===============*/
 .footer__container{
   row-gap: 4rem;
@@ -1252,7 +1386,51 @@ justify-content: initial ;
   grid-template-columns: repeat(3, max-content);
 }
 }
-
+/* pentru width < 1024 */
+@media screen and (max-width: 1024px) {
+  .home__data {
+    text-align: left;
+    /* Reset text alignment to left when screen width is 1024px or less */
+    margin: 0 auto;
+    /* Center the entire div by adding auto margin */
+    max-width: 80%;
+    /* Optionally, limit the maximum width for better readability */
+    margin-top: 4rem !important;
+    
+  }
+  .home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(46, 46, 46, 0.366), rgba(43, 43, 43, 0.5)), url("../img/poza23.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.4;
+  /* Place the overlay behind the content */
+ 
+  /* Adjust the opacity as needed */
+}
+    .home__title{
+      text-wrap: balance;
+      margin-bottom: 4rem !important;
+    }
+      .home__description{
+        text-wrap: balance;
+        margin-bottom: 4rem !important;
+      }
+    .home__container{
+      display: flex;
+      align-items: center;
+    }
+    .test {
+      margin-left:0 !important;
+      height: 100vh;
+    }
+}
 /* For large devices */
 @media screen and (min-width: 1023px){
   .nav{
@@ -1294,18 +1472,7 @@ justify-content: initial ;
     width: 550px;
     transform: translateX(-6rem);
   }
-  .home__triangle{
-    width: 700px; 
-  }
-  .home__triangle-1{
-    width: 145px; 
-  }
-  .home__triangle-2{
-    width: 345px; 
-  }
-  .home__triangle-3{
-    width: 545px; 
-  }
+    
   .logos__img{
     width: 190px;
   }
@@ -1315,15 +1482,7 @@ justify-content: initial ;
   .choose__img{
     width: 400px;
   }
-  .choose__triangle{
-    height: 700px;
-  }
-  .choose__triangle-2{
-    width: 545px;
-  }
-  .choose__triangle-3{
-    width: 145px;
-  }
+  
   .footer{
     padding-bottom: 3rem;
   }
