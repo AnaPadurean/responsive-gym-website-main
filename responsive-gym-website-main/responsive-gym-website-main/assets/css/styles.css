@@ -252,7 +252,9 @@ a {
   height: 90vh;
 }
 
-.section__data {
+/* Adauga aceste reguli CSS pentru a face sectiunea section-1 responsive */
+
+.section__data, .about-center {
   display: flex;
   flex-direction: column;
   row-gap: .75rem;
@@ -346,7 +348,13 @@ a {
 .nav__logo:hover{
  color: #bd487b;
 }
-
+.contact-us .map {
+  overflow: hidden;
+  border-radius: 4px;
+}
+.section-title{
+  padding-left: 6rem;
+}
 @media screen and (max-width:1024px){
   .nav__menu{
     position: fixed;
@@ -1569,10 +1577,15 @@ justify-content: initial ;
     align-self: center;
     padding-left: 1rem;
     padding-right: 1rem;
+   
     
   }
+ 
   .about-info{
     text-wrap: balance;
+  }
+  .about-img{
+    width: fit-content !important;
   }
 }
 .locatie-inot{
@@ -1685,11 +1698,12 @@ justify-content: initial ;
 
   .about-img,
   .about-info {
-    flex: 0 0 calc(50% - 2rem);
+    flex:auto;
     margin-bottom: 0;
     align-self: center;
     
   }
+  
 }
 
 @media screen  and (min-width:1332px) {
@@ -1844,11 +1858,15 @@ justify-content: initial ;
 
 .about-img {
   position: relative;
+   width: 80vw !important;
 }
 
 .about-img,
 .about-info {
   margin-bottom: 2rem;
+}
+.about-img{
+  width: fit-content !important;
 }
 
 .margin {
@@ -1940,6 +1958,33 @@ justify-content: initial ;
   }
 }
 
+
+/* Stiluri pentru ecrane mai mici */
+@media screen and (max-width: 575px) {
+
+  /* .about-center {
+    text-align: center !important;
+  }
+  .about-info h3 {
+    font-size: 1.5rem !important; */
+    /* Redu dimensiunea fontului pentru a se potrivi ecranelor mici */
+  /* }
+
+  .about-info p {
+    font-size: 0.9rem !important; */
+    /* Redu dimensiunea fontului pentru a se potrivi ecranelor mici */
+  /* } */
+
+  /* .add-margin {
+    margin-bottom: 10px; */
+    /* Redu spațiul între elemente pentru ecrane mai mici */
+  /* } */
+
+  article.about-info{
+    text-align: center !important;
+    display: block !important;
+  }
+}
 
 .text-blk {
   padding-top: 0px;
