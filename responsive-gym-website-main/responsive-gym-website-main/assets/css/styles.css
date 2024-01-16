@@ -1269,6 +1269,19 @@ html::-webkit-scrollbar-thumb:hover{
 }
 
 /*=============== BREAKPOINTS ===============*/
+
+.section-center.about-center.margin.about-img {
+  max-width: 1200px; /* sau oricare altă valoare potrivită pentru design-ul tău */
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .section-center.about-center.margin.about-img {
+      max-width: 90%; /* sau oricare altă valoare potrivită pentru design-ul tău pe ecrane mici */
+      margin: 0 auto;
+  }
+}
+
 /* For small devices */
 @media screen and (max-width: 340px) {
   .container{
@@ -1299,6 +1312,25 @@ html::-webkit-scrollbar-thumb:hover{
   }
   .footer__content{
     grid-template-columns: 1fr;
+  }
+  .about-center{
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  row-gap: .75rem !important;
+  text-align: center !important;
+  margin-bottom: 3rem;
+  }
+  .about-info{
+    text-align: center !important;
+  }
+  .about-info h3{
+    font-size: 1rem !important; 
+    text-align: center !important;
+  }
+  .about-info p{
+    font-size: .75rem !important;
+    text-align: center !important;
   }
 }
 
@@ -1378,6 +1410,8 @@ justify-content: initial ;
   grid-template-columns: repeat(3, max-content);
 }
 }
+
+
 /* pentru width < 1024 */
 @media screen and (max-width: 1024px) {
   .home__data {
@@ -1577,7 +1611,11 @@ justify-content: initial ;
     align-self: center;
     padding-left: 1rem;
     padding-right: 1rem;
-   
+    display: flex;
+    flex-direction: column;
+    row-gap: .75rem;
+    text-align: center;
+    margin-bottom: 3rem;
     
   }
  
@@ -1955,34 +1993,6 @@ justify-content: initial ;
 
   .service-title {
     margin-bottom: 0.5rem;
-  }
-}
-
-
-/* Stiluri pentru ecrane mai mici */
-@media screen and (max-width: 575px) {
-
-  /* .about-center {
-    text-align: center !important;
-  }
-  .about-info h3 {
-    font-size: 1.5rem !important; */
-    /* Redu dimensiunea fontului pentru a se potrivi ecranelor mici */
-  /* }
-
-  .about-info p {
-    font-size: 0.9rem !important; */
-    /* Redu dimensiunea fontului pentru a se potrivi ecranelor mici */
-  /* } */
-
-  /* .add-margin {
-    margin-bottom: 10px; */
-    /* Redu spațiul între elemente pentru ecrane mai mici */
-  /* } */
-
-  article.about-info{
-    text-align: center !important;
-    display: block !important;
   }
 }
 
