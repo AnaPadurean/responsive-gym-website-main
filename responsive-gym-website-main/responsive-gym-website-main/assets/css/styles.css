@@ -1270,15 +1270,30 @@ html::-webkit-scrollbar-thumb:hover{
 
 /*=============== BREAKPOINTS ===============*/
 
-.section-center.about-center.margin.about-img {
+.section-center.about-center.margin {
+  max-width: 1200px; /* sau oricare altă valoare potrivită pentru design-ul tău */
+  margin: 0 auto;
+}
+
+
+.section-center.about-img {
   max-width: 1200px; /* sau oricare altă valoare potrivită pentru design-ul tău */
   margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
-  .section-center.about-center.margin.about-img {
+  .section-center.about-center.margin {
       max-width: 90%; /* sau oricare altă valoare potrivită pentru design-ul tău pe ecrane mici */
       margin: 0 auto;
+  }
+
+  .section-center.about-center{
+    font-size: .75rem;
+
+  .section-center.about-img {
+    max-width: 1000px;
+    margin: 0 auto !important;
+  }
   }
 }
 
